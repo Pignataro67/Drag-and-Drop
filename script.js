@@ -10,3 +10,12 @@ for(const empty of empties) {
   empty.addEventListener('dragleave', dragLeave)
   empty.addEventListener('drop', dragDrop)
 }
+
+function dragStart() {
+  this.className += ' hold' 
+  setTimeout(() => this.className = 'invisible', 0)
+}
+
+function dragEnd() {
+  this.className = 'fill'
+}
