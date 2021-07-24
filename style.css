@@ -3,27 +3,27 @@
 }
   
 body {
-  background-color: steelblue;
+  background-color: rgb(70, 180, 98);
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 95vh;
   overflow: hidden;
   margin: 0;
 }
 
 .empty {
-  height: 150px;
-  width: 150px;
+  height: 135px;
+  width: 145px;
   margin: 10px;
-  border: solid 3px black;
+  border: solid 4px black;
   background: white;
 }  
 
 .fill {
   background-image: url('https://source.unsplash.com/random/150x150');
-  height: 145px;
-  width: 145px;
+  height: 140px;
+  width: 150px;
   cursor: pointer;
 }
   
@@ -32,12 +32,12 @@ body {
 }
 
 .hovered {
-  background-color: #333;
+  background-color: #335;
   border-color: white;
   border-style: dashed;
 }
   
-@media (max-width: 800px) {
+@media (max-width: 750px) {
   body {
     flex-direction: column;
   }
