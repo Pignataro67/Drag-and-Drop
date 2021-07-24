@@ -19,3 +19,12 @@ function dragStart() {
 function dragEnd() {
   this.className = 'fill'
 }
+
+function dragOver(e) {
+  e.preventDefault()
+}
+
+function dragEnter(e) {
+  e.preventDefault()
+  this.className += ' hovered'
+}
